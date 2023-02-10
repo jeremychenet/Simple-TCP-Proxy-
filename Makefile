@@ -1,5 +1,7 @@
 PATH_SERVER = ./server
 PATH_CLIENT = ./client
+SERVER_BIN = server_side
+CLIENT_BIN = client_side
 
 all :
 	make -C $(PATH_SERVER)
@@ -12,5 +14,7 @@ clean:
 fclean:	clean
 	make fclean -C $(PATH_SERVER)
 	make fclean -C $(PATH_CLIENT)
+	rm -f $(SERVER_BIN)
+	rm -f $(CLIENT_BIN)
 
 re: fclean all

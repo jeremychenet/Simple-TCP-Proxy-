@@ -16,5 +16,6 @@ fclean:	clean
 	make fclean -C $(PATH_CLIENT)
 	rm -f $(SERVER_BIN)
 	rm -f $(CLIENT_BIN)
+	rm -f log.txt
 
 re: fclean all

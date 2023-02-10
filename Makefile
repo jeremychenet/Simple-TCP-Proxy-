@@ -2,6 +2,7 @@ PATH_SERVER = ./server
 PATH_CLIENT = ./client
 SERVER_BIN = server_side
 CLIENT_BIN = client_side
+LOG = log.txt
 
 all :
 	make -C $(PATH_SERVER)
@@ -16,6 +17,5 @@ fclean:	clean
 	make fclean -C $(PATH_CLIENT)
 	rm -f $(SERVER_BIN)
 	rm -f $(CLIENT_BIN)
-	rm -f log.txt
 
 re: fclean all

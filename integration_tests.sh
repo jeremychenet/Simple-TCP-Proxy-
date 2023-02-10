@@ -35,9 +35,10 @@ lunch_servers_and_clients() {
 }
 
 # Run the tests and save the output in a file
-rm -f log.txt
-touch log.txt
-lunch_servers_and_clients > log.txt
+LOG_FILE="log.txt"
+rm -f $LOG_FILE
+touch $LOG_FILE
+lunch_servers_and_clients > $LOG_FILE
 
 # Check if the output is correct
 

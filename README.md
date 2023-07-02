@@ -32,7 +32,7 @@ Secret: The secret required for clients to connect to each other
 
 A C++ compiler
 Network connectivity for the server and clients
-The c++ Boost/Asio installed
+The c++ Boost/Asio library needs to be installed
 
 - On Fedora:
 ```sh
